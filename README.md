@@ -1,0 +1,1 @@
+This project contained SQL scripts, Excel files, and SSIS projects.
