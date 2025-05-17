@@ -1,0 +1,8 @@
+*.xlsx
+*.log
+*.tmp
+*.bak
+*.user
+*.suo
+bin/
+obj/
