@@ -1,4 +1,4 @@
-CREATE TABLE NSWPublicSchools (
+CREATE TABLE load_NSWPublicSchools (
 	DimSchoolKey INT IDENTITY(1,1) PRIMARY KEY,
     SchoolCode INT ,
     AgeID INT,
@@ -39,7 +39,7 @@ CREATE TABLE NSWPublicSchools (
     DateExtracted DATE
 );
 
-CREATE TABLE AUSSubCityDistrictState(
+CREATE TABLE load_AUSSubCityDistrictState (
 	DimSubCityKey INT IDENTITY(1,1) PRIMARY KEY,
     Postcode INT,
     Suburb VARCHAR(100),
@@ -51,7 +51,7 @@ CREATE TABLE AUSSubCityDistrictState(
     District VARCHAR(100)
 );
 
-CREATE TABLE NSWPropertyMedianValue(
+CREATE TABLE load_NSWPropertyMedianValue(
 	FactMedianValueKey INT IDENTITY(1,1) PRIMARY KEY,
     State VARCHAR(100),
     CityTown VARCHAR(100),
@@ -63,3 +63,6 @@ CREATE TABLE NSWPropertyMedianValue(
     UpdatedYear INT,
     UpdatedMonth INT
 );
+exec sp_rename 'NSWPublicSchools' , 'load_NSWPublicSchools ';
+exec sp_rename 'AUSSubCityDistrictState', 'load_AUSSubCityDistrictState';
+exec sp_rename 'NSWPropertyMedianValue', 'load_NSWPropertyMedianValue';
