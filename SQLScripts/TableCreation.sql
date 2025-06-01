@@ -60,4 +60,9 @@ CREATE TABLE load_NSWPropertyMedianValue(
     UpdatedMonth INT NULL,
     CompositeKey NVARCHAR(150) NOT NULL
 );
-
+ truncate table[dbo].[load_AUSSubCityDistrictState]
+ truncate table [dbo].[load_NSWPropertyMedianValue]
+ truncate table [dbo].[load_NSWPublicSchools]
+ select * from [dbo].[load_NSWPropertyMedianValue]
+ select * from [dbo].[load_NSWPublicSchools]
+ select * from [dbo].[load_AUSSubCityDistrictState]

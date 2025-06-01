@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="159"
-  DTS:VersionGUID="{DD938773-9023-407B-9BB0-A7A56D6FA671}">
+  DTS:VersionBuild="162"
+  DTS:VersionGUID="{584A83A1-519B-40A2-9AFF-95576B92AB3A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1141,13 +1141,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\NSWPropertyMedianValue"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{A90B7E1A-F83C-42F2-8883-A8790BC20905}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="NSWPropertyMedianValue"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -1155,7 +1155,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Data Conversion"
+              refId="Package\NSWPropertyMedianValue\Data Conversion"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
@@ -1163,58 +1163,58 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                  refId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[State]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input].Columns[State]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="State"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[State]" />
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[State]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[City/Town]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input].Columns[City/Town]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="City/Town"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[City/Town]" />
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[City/Town]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Suburb]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input].Columns[Suburb]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Suburb"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Suburb]" />
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Suburb]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[District]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input].Columns[District]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="District"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[District]" />
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[District]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Location]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input].Columns[Location]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Location"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Location]" />
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Location]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
+                  refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]"
                       name="Copy of State"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1222,7 +1222,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[State]}</property>
+                          name="SourceInputColumnLineageID">#{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[State]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1230,13 +1230,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of City/Town]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of City/Town]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of City/Town]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of City/Town]"
                       name="Copy of City/Town"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1244,7 +1244,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[City/Town]}</property>
+                          name="SourceInputColumnLineageID">#{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[City/Town]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1252,13 +1252,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Suburb]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Suburb]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Suburb]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Suburb]"
                       name="Copy of Suburb"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1266,7 +1266,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Suburb]}</property>
+                          name="SourceInputColumnLineageID">#{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Suburb]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1274,13 +1274,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of District]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of District]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of District]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of District]"
                       name="Copy of District"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1288,7 +1288,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[District]}</property>
+                          name="SourceInputColumnLineageID">#{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[District]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1296,13 +1296,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Location]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Location]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Location]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Location]"
                       name="Copy of Location"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1310,7 +1310,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Location]}</property>
+                          name="SourceInputColumnLineageID">#{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Location]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1321,22 +1321,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]"
+                  refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1345,7 +1345,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Derived Column"
+              refId="Package\NSWPropertyMedianValue\Derived Column"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
@@ -1353,40 +1353,45 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  refId="Package\NSWPropertyMedianValue\Derived Column.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Suburb]"
+                      refId="Package\NSWPropertyMedianValue\Derived Column.Inputs[Derived Column Input].Columns[Suburb]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Suburb"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Suburb]" />
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Suburb]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Postcode]"
+                      refId="Package\NSWPropertyMedianValue\Derived Column.Inputs[Derived Column Input].Columns[Postcode]"
                       cachedDataType="r8"
                       cachedName="Postcode"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Postcode]" />
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Postcode]" />
+                    <inputColumn
+                      refId="Package\NSWPropertyMedianValue\Derived Column.Inputs[Derived Column Input].Columns[Property_Median_Value]"
+                      cachedDataType="cy"
+                      cachedName="Property_Median_Value"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  refId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Output]"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\NSWPropertyMedianValue\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[CompositeKey]"
+                      refId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Output].Columns[CompositeKey]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="306"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[CompositeKey]"
+                      lineageId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Output].Columns[CompositeKey]"
                       name="CompositeKey"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1394,7 +1399,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Suburb]} + "_" + (DT_WSTR,50)#{Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Postcode]}</property>
+                          name="Expression">#{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Suburb]} + "_" + (DT_WSTR,50)#{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Postcode]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1403,27 +1408,50 @@
                           name="FriendlyExpression">Suburb + "_" + (DT_WSTR,50)Postcode</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Output].Columns[Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Output].Columns[Category]"
+                      name="Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_WSTR,20)(#{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]} &lt;= 750000 ? "$0-$750K" : #{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]} &lt;= 1500000 ? "$750K-$1.5M" : #{Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]} &lt;= 2500000 ? "$1.5M-$2.5M" : "$2.5M+")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_WSTR,20)(Property_Median_Value &lt;= 750000 ? "$0-$750K" : Property_Median_Value &lt;= 1500000 ? "$750K-$1.5M" : Property_Median_Value &lt;= 2500000 ? "$1.5M-$2.5M" : "$2.5M+")</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  refId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Error Output]"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\NSWPropertyMedianValue\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1432,7 +1460,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Excel Source"
+              refId="Package\NSWPropertyMedianValue\Excel Source"
               componentClassID="Microsoft.ExcelSource"
               contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Excel Source"
@@ -1473,7 +1501,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Excel Source.Connections[OleDbConnection]"
+                  refId="Package\NSWPropertyMedianValue\Excel Source.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 2]"
                   connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 2]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1481,206 +1509,206 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output]"
+                  refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output]"
                   name="Excel Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[State]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[State]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[State]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[State]"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[State]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[State]"
                       name="State"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[City/Town]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[City/Town]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[City/Town]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[City/Town]"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[City/Town]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[City/Town]"
                       name="City/Town"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Suburb]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Suburb]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Suburb]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Suburb]"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Suburb]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Suburb]"
                       name="Suburb"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Postcode]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Postcode]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Postcode]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Postcode]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Postcode]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Postcode]"
                       name="Postcode"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[District]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[District]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[District]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[District]"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[District]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[District]"
                       name="District"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Location]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Location]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Location]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Location]"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Location]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Location]"
                       name="Location"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]"
                       dataType="cy"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Property_Median_Value]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Property_Median_Value]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]"
                       name="Property_Median_Value"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Updated_Year]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Updated_Year]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Updated_Year]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Updated_Year]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Updated_Year]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Updated_Year]"
                       name="Updated_Year"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Updated_Month]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Updated_Month]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Updated_Month]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Updated_Month]"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Updated_Month]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Updated_Month]"
                       name="Updated_Month"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[State]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[State]"
                       dataType="wstr"
                       length="255"
                       name="State" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[City/Town]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[City/Town]"
                       dataType="wstr"
                       length="255"
                       name="City/Town" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Suburb]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Suburb]"
                       dataType="wstr"
                       length="255"
                       name="Suburb" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Postcode]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Postcode]"
                       dataType="r8"
                       name="Postcode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[District]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[District]"
                       dataType="wstr"
                       length="255"
                       name="District" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Location]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Location]"
                       dataType="wstr"
                       length="255"
                       name="Location" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Property_Median_Value]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Property_Median_Value]"
                       dataType="cy"
                       name="Property_Median_Value" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Updated_Year]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Updated_Year]"
                       dataType="r8"
                       name="Updated_Year" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Updated_Month]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].ExternalColumns[Updated_Month]"
                       dataType="r8"
                       name="Updated_Month" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output]"
+                  refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output]"
                   isErrorOut="true"
                   name="Excel Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[State]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[State]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[State]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[State]"
                       name="State" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[City/Town]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[City/Town]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[City/Town]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[City/Town]"
                       name="City/Town" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Suburb]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Suburb]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Suburb]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Suburb]"
                       name="Suburb" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Postcode]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Postcode]"
                       dataType="r8"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Postcode]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Postcode]"
                       name="Postcode" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[District]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[District]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[District]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[District]"
                       name="District" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Location]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Location]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Location]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Location]"
                       name="Location" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Property_Median_Value]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Property_Median_Value]"
                       dataType="cy"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Property_Median_Value]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Property_Median_Value]"
                       name="Property_Median_Value" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Updated_Year]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Updated_Year]"
                       dataType="r8"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Updated_Year]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Updated_Year]"
                       name="Updated_Year" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Updated_Month]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Updated_Month]"
                       dataType="r8"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Updated_Month]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[Updated_Month]"
                       name="Updated_Month" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1689,7 +1717,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\NSWPropertyMedianValue\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -1746,7 +1774,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\NSWPropertyMedianValue\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-A53B6Q5\IC.Data_Warehouse]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-A53B6Q5\IC.Data_Warehouse]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1754,157 +1782,176 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Postcode]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Postcode]"
                       cachedDataType="r8"
                       cachedName="Postcode"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Postcode]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Postcode]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Postcode]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Postcode]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Property_Median_Value]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Property_Median_Value]"
                       cachedDataType="cy"
                       cachedName="Property_Median_Value"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PropertyMedianValue]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PropertyMedianValue]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Property_Median_Value]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Updated_Year]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Updated_Year]"
                       cachedDataType="r8"
                       cachedName="Updated_Year"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedYear]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Updated_Year]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedYear]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Updated_Year]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Updated_Month]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Updated_Month]"
                       cachedDataType="r8"
                       cachedName="Updated_Month"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedMonth]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Updated_Month]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedMonth]"
+                      lineageId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output].Columns[Updated_Month]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of State]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of State]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of State"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of City/Town]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of City/Town]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of City/Town"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CityTown]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of City/Town]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CityTown]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of City/Town]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Suburb]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Suburb]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of Suburb"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Suburb]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Suburb]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Suburb]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Suburb]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of District]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of District]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of District"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[District]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of District]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[District]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of District]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Location]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Location]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of Location"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Location]" />
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
+                      lineageId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Location]" />
+                    <inputColumn
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CompositeKey]"
+                      cachedDataType="wstr"
+                      cachedLength="306"
+                      cachedName="CompositeKey"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CompositeKey]"
+                      lineageId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Output].Columns[CompositeKey]" />
+                    <inputColumn
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Category]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Category"
+                      externalMetadataColumnId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Category]"
+                      lineageId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Output].Columns[Category]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FactMedianValueKey]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FactMedianValueKey]"
                       dataType="i4"
                       name="FactMedianValueKey" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="State" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CityTown]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CityTown]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="CityTown" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Suburb]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Suburb]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="Suburb" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Postcode]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Postcode]"
                       dataType="i4"
                       name="Postcode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[District]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[District]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="District" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="Location" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PropertyMedianValue]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PropertyMedianValue]"
                       dataType="numeric"
                       name="PropertyMedianValue"
                       precision="15"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedYear]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedYear]"
                       dataType="i4"
                       name="UpdatedYear" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedMonth]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedMonth]"
                       dataType="i4"
                       name="UpdatedMonth" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CompositeKey]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CompositeKey]"
                       dataType="wstr"
                       length="150"
                       name="CompositeKey" />
+                    <externalMetadataColumn
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Category]"
+                      dataType="wstr"
+                      length="100"
+                      name="Category" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\NSWPropertyMedianValue\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\NSWPropertyMedianValue\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\NSWPropertyMedianValue\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\NSWPropertyMedianValue\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1915,20 +1962,20 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
-              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              refId="Package\NSWPropertyMedianValue.Paths[Data Conversion Output]"
+              endId="Package\NSWPropertyMedianValue\Derived Column.Inputs[Derived Column Input]"
               name="Data Conversion Output"
-              startId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]" />
+              startId="Package\NSWPropertyMedianValue\Data Conversion.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\NSWPropertyMedianValue.Paths[Derived Column Output]"
+              endId="Package\NSWPropertyMedianValue\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Derived Column Output"
-              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+              startId="Package\NSWPropertyMedianValue\Derived Column.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Excel Source Output]"
-              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+              refId="Package\NSWPropertyMedianValue.Paths[Excel Source Output]"
+              endId="Package\NSWPropertyMedianValue\Data Conversion.Inputs[Data Conversion Input]"
               name="Excel Source Output"
-              startId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output]" />
+              startId="Package\NSWPropertyMedianValue\Excel Source.Outputs[Excel Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3685,6 +3732,24 @@
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{EBB4372C-70C7-4C09-8CB0-A687FE34717F}"
+      DTS:From="Package\AUSSubCityDistrictState"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\NSWPubicSchool" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{E43DEA3B-99A3-47F4-9636-867E80EAC551}"
+      DTS:From="Package\NSWPubicSchool"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\NSWPropertyMedianValue" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -3696,7 +3761,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="192.8,41.6"
           Id="Package\AUSSubCityDistrictState"
@@ -3706,9 +3771,65 @@
           Id="Package\NSWPubicSchool"
           TopLeft="389.666645676726,126.833332489597" />
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task"
+          Size="202.4,41.6"
+          Id="Package\NSWPropertyMedianValue"
           TopLeft="385.499979237716,221.299998499354" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="469.066646018211,78.8666664075192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.9666660820773"
+              Start="0,0"
+              End="0,40.4666660820773">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.4666660820773" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="470.066645676726,168.433332489597">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.6333335609899,52.8666660097572"
+              Start="0,0"
+              End="16.6333335609899,45.3666660097572">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.4333330048786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.4333330048786"
+                    Point2="0,26.4333330048786"
+                    Point3="4,26.4333330048786" />
+                  <mssgle:LineSegment
+                    End="12.6333335609899,26.4333330048786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.6333335609899,26.4333330048786"
+                    Point2="16.6333335609899,26.4333330048786"
+                    Point3="16.6333335609899,30.4333330048786" />
+                  <mssgle:LineSegment
+                    End="16.6333335609899,45.3666660097572" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4004,24 +4125,24 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\NSWPropertyMedianValue">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="140,41.6"
-          Id="Package\Data Flow Task\Excel Source"
+          Id="Package\NSWPropertyMedianValue\Excel Source"
           TopLeft="498.499992653728,58.4999992102385" />
         <NodeLayout
           Size="171.2,41.6"
-          Id="Package\Data Flow Task\OLE DB Destination"
+          Id="Package\NSWPropertyMedianValue\OLE DB Destination"
           TopLeft="564.999991580844,353.999994724989" />
         <NodeLayout
           Size="156,41.6"
-          Id="Package\Data Flow Task\Data Conversion"
+          Id="Package\NSWPropertyMedianValue\Data Conversion"
           TopLeft="559.99999165535,143.999997854233" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Excel Source Output]"
+          Id="Package\NSWPropertyMedianValue.Paths[Excel Source Output]"
           TopLeft="568.499992653728,100.099999210238">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4056,10 +4177,10 @@
         </EdgeLayout>
         <NodeLayout
           Size="152.8,41.6"
-          Id="Package\Data Flow Task\Derived Column"
+          Id="Package\NSWPropertyMedianValue\Derived Column"
           TopLeft="634.999990537763,241.199996930361" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          Id="Package\NSWPropertyMedianValue.Paths[Data Conversion Output]"
           TopLeft="637.99999165535,185.599997854233">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4093,7 +4214,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          Id="Package\NSWPropertyMedianValue.Paths[Derived Column Output]"
           TopLeft="711.399990537763,282.799996930361">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4130,7 +4251,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Excel Source">
+    design-time-name="Package\NSWPropertyMedianValue\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4143,7 +4264,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\NSWPropertyMedianValue\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
