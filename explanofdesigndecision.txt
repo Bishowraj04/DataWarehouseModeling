@@ -1,0 +1,5 @@
+load_NSWPropertyMedianValue is the fact table because it contains key business metrics such as PropertyMedianValue and Category. It represents measurable data points that are central to analysis.
+
+load_AUSSubCityDistrictState_Data and load_NSWPublicSchools are dimension tables as they provide descriptive attributes — such as City, District, State, and school-related details — that give context to the facts.
+
+All tables are connected through a common column, CompositeKey, which is a combination of Postcode and City. This key serves as the relationship link between the fact table and the dimension tables.
